@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avangard_school</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 500px;
+            background-color: tomato;
+            color: blanchedalmond;
+            transition: all linear 2s;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .dropdown-content {
+            display: none;
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            z-index: 1;
+            transition: all linear 2s;
+        }
+        
+        .dropdown:hover {
+            background-color: blue;
+            border: 4px solid hotpink;
+            color: red;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            transition: all linear 2s;
+        }
+        .img {border: none;}
+        .img:hover {border: 10px solid red;}
+    </style>
+</head>
+
+<body>
+    <div class="bosh">
+        <header>
+            <div class="logo"><a href="#">AVAN<span class="pink">GARD</span><span class="gray">.com</span></a></div>
+        </header>
+    </div>
+    <div class="ramka">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about us.html">ABOUT ME</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+
+        <section>
+
+
+            <div class="dropdown">
+                <h1>CODED BY.....</h1>
+                <div class="dropdown-content">
+                    <img class="img" src="img/Logo/logo.png" alt="csgo" width="600px" height="600px">
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>
+            <address>
+                <b>Manzilimiz:</b>Toshkent vil,Yuqori chirchiq tumani <br>
+                <b>Telefon raqam:</b>1189,+998-33-20-07-906 <br>
+                <b>Email:</b>AVANGARD656@gmail.com <br>
+                <b>Telegram:</b>@AVANGARD2007 <br>
+                <b>Facebook:</b>@AVANGARD_2007 <br>
+            </address>
+            </p>
+        </footer>
+</body>
+
+</html>

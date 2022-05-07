@@ -1,0 +1,481 @@
+body {
+    font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(img/bg.jpg) repeat;
+    caret-color: hotpink;
+}
+
+
+.float {float: left;}
+
+
+::selection {
+	background-color: #a45f93;
+	color: white;
+	text-shadow: none;
+}
+
+
+::-moz-selection {
+	background-color: #a45f93;
+	color: white;
+	text-shadow: none;
+}
+
+/* sahifa nomi */
+.bosh {
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px 10px 10px 10px;
+    width: 915px;
+    margin-bottom: 20px;
+    border: 2px solid hotpink;
+}
+/* Sahifani o'rab turuvchi ramka va sahifa ichidagi rang */
+
+
+.ramka {
+    border-image: url(img/f.bmp) 30 round;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid rgb(24, 21, 21);
+    width: 915px;
+    height: auto;
+    background-image: linear-gradient(rgb(41, 41, 41), rgb(58, 58, 58));
+}
+
+
+
+
+/* Sahifaning logotipi(sayit nomi) */
+
+header .logo {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+header .logo a {
+    text-decoration: none;
+    font-size: 70px;
+    text-shadow: 0 1px 0 white;
+    color: #373e47;
+    transition: all linear 0.5s;
+}
+
+
+header .logo a:hover {
+    color: #a45f93;
+}
+
+
+header .pink {
+    color: #a45f93;
+    transition: all linear 0.5s;
+}
+
+
+header .logo a:hover .pink {
+    color: #373e47;
+}
+
+
+header .gray {
+    color: #8b95a4;
+    font-size: 60px;
+}
+
+
+
+
+/* saytning navigatsyasi(menyusi) */
+nav ul {
+    margin: 15px;
+    padding: 10px 0px;
+    list-style-type: none;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+nav ul li {
+    float: left;
+    padding: 5px;
+}
+
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+    padding: 15px 19px;
+    border: 2px solid black;
+    transition: all linear 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: hotpink;
+}
+
+
+.active {
+    color: hotpink;;
+}
+
+
+nav ul li a:active {
+    background-color: #373e47;
+}
+
+
+
+
+/* sahifaning asosiy matinlari */
+section {
+    padding: 50px 0px;
+}
+
+
+section p {
+    margin-left: 20px;
+    margin-right: px;
+    color: rgb(197, 197, 197);
+    font-size: 19px;
+    padding: 20px;
+    border-right: 1px hidden;
+    text-align: left;
+    font-family: cursive;
+}
+
+
+section details {
+    text-align: center;
+}
+
+
+section h2 {text-align: center;
+            color: dodgerblue;
+            padding: 16px 16px 16px 16px;
+            border: 2px solid rgb(75, 75, 75);
+            width: 450px;
+            margin-left: 230px;
+            margin-bottom: 30px;
+            background-color: #373e47;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all linear 0.6s;
+}
+
+
+section h2:hover {
+    border: 2px solid hotpink;
+    color: rgb(0, 91, 236);
+}
+
+
+section h2 a {
+    text-decoration: none;
+    color: red;
+}
+
+
+section  h2:active {
+                   background-color: #5e686b; 
+}
+
+
+section img {
+    width: 250px;
+    height: 250px;
+    margin: 10px 15px;
+    border: 10px solid rgb(75, 75, 75);
+    z-index: 0;
+    transition: all linear 0.5s;
+}
+
+
+section img:hover {
+    border: 10px solid hotpink;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* o'ng tarafdagi qo'shimcha menyu */
+
+aside{
+    background-color: #31353a;
+    margin-top: 120px;
+    margin-left: 918px;
+    border-left: 6px dotted #1b1b1b;
+    height: auto;
+    width: 310px;
+    position: fixed;
+}
+
+
+aside h3 {text-align: center;
+          color: dodgerblue;
+}
+
+
+aside sup {
+    color: red;
+}
+
+
+aside a {color: hotpink;
+         text-decoration: none;
+}
+
+
+aside a:hover {
+    color: rgb(255, 0, 128);
+}
+
+
+aside a:active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 0);
+}
+
+/* Sayitning eng bo'limi (omborxonasi) */
+
+footer {
+    float: left;
+    margin-top: 20px;
+    width: 915px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    position: relative;
+    padding: 0px;
+    margin: 10px;
+    transition: all linear 0.7s;
+}
+
+footer:hover{
+    background-color: rgb(27, 27, 27);
+    color: hotpink;
+    border: 2px double red;
+}
+
+
+/* Contact bo'limi */
+
+.contact_boshi h1{
+    border: 2px solid rgb(3, 3, 3);
+    background: linear-gradient( rgb(139, 139, 139),rgb(36, 36, 36));
+    font-size: 28px;
+    padding: 16px;
+    margin-top: 20px;
+    text-align: center;
+    color: dodgerblue;
+    font-family:Arial, Helvetica, sans-serif 'Times New Roman', Times, serif;
+    transition: all linear 0.5s;
+} 
+.contact_boshi h1:hover {
+    color: rgb(255, 77, 45);
+    border: 2px solid hotpink;
+    font-family: cursive,Arial, Helvetica, sans-serif;
+}
+
+.sorov{
+    text-align: center;
+    color: hotpink;
+    border-bottom: 2px solid rgb(255, 1, 242);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all linear 0.4s;
+}
+
+
+form {
+    text-align: center;
+    
+}
+
+
+label {
+    color: dodgerblue;
+}
+
+
+select {
+    width: 230px;
+    border: 2px solid tomato;
+    background-color: #373e47;
+    color: wheat;
+    transition: all linear 0.4s;
+}
+
+
+select:hover {
+    border: 2px solid dodgerblue;
+}
+
+
+input {
+    width: 220px;
+    border: tomato 2px solid;
+    background-color: #373e47;
+    color: wheat;
+    transition: all linear 0.4s;
+}
+
+
+input:hover {
+    border: 2px solid dodgerblue;
+}
+
+
+textarea {
+    background-color: #373e47;
+    color: tomato;
+    color: wheat;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    transition: all linear 0.4s;
+}
+
+textarea:hover {
+    border: 2px solid dodgerblue;
+}
+
+input[type=submit] {
+    width: 110px;
+    padding: 6px;
+    font-size: 15px;
+    border: none;
+    background-color: tomato;
+    border: 2px dodgerblue outset;
+    transition: all linear 0.4s;
+}
+
+input[type=submit]:hover {
+         border: 2px solid rgb(19, 137, 255);
+         background-color: rgb(255, 68, 35);
+         transition: all linear 0.3s;
+}
+
+
+input[type=submit]:active {
+    transform: translateY(5px);
+}
+/* About me bo'limi */
+
+.me {
+    margin-top: 80px;
+    padding: 20px 0px;
+}
+
+
+.me img {
+    width: 350px;
+    height: 350px;   
+    border-radius: 50%; 
+    border: 1px solid;
+    margin-left: 290px;
+    margin-top: 50px;
+    transition: all linear 0.5s;
+}
+.me img:hover{
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+    border: 4px solid hotpink;
+    margin-left: 260px;
+}
+
+
+.me h1 {color: red;
+        text-shadow: 0px 5px 2px rgb(0, 0, 0);
+        margin-left: 320px;
+}
+.me p a {color: hotpink;
+         text-decoration: none;
+}
+
+
+.me p b{color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-left: 320px;
+}
+
+
+.line {border-bottom: 4px solid rgb(22, 22, 22);
+       width: 500px;
+       margin-left: 210px;
+}
+
+
+.dvloper {
+    text-align: center;
+    margin-top: 50px;
+    color: dodgerblue;
+}
+
+
+.dvloper table{
+    border-collapse: inherit;
+}
+
+
+.dvloper th,td {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 255, 0);
+    padding: 20px 20px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    transition: all linear 0.2s;
+}
+
+
+.dvloper th {color: red; font-size: 25px;}
+
+
+.dvloper th:hover {
+    background-color: #373e47;
+}
+
+
+.dvloper th:active {
+    background-color: #afafaf;
+}
+
+
+.dvloper td:hover {
+   background-color: tomato;
+}
+
+
+.dvloper td:active {
+    background-color: #afafaf;
+}
+
+.content {
+    text-align: left;
+    color: rgb(0, 255, 0);
+    list-style-type: square;
+}
+
+.content b {color: rgb(255, 11, 11);}
+
+.aloqa {
+    text-align: center;
+}
+.aloqa a {
+    border: 2px solid black;
+    background-color: dodgerblue;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    transition: all linear 0.2s;
+}
+.aloqa a:active {
+    background-color: royalblue;
+    border: 2px solid hotpink;
+}
+
+/* Portfolio bo'limi (vaqtinchalik ishlamaydi!!!) */
+.no-drop {
+    cursor: no-drop;
+}
